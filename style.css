@@ -87,6 +87,8 @@ body, html {
 .contact-main {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .contact-info {
@@ -130,4 +132,22 @@ p {
 
 strong {
     color: #cccccc;
+}
+
+@media (max-width: 630px) {
+    .inner-container {
+        width: 90%;
+        background-color: rgba(27, 27, 27, 0.8);
+        padding-top: 1.75rem;
+        padding-bottom: 1.75rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        border-radius: 53px;
+        height: 550px;
+    }
+    
+    .custom-container {
+        display: flex;
+        justify-content: center;
+    }
 }
